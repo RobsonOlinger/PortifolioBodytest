@@ -8,20 +8,20 @@ Test Teardown       Take Screenshot
 
 ***Test Cases***
 Cenario: Calcular preço total do plano
-
+    
     &{plan}     Create Dictionary       title=Papito Teste      duration=12     price=19,99     total=R$ 239,88
 
     Go To Plans
     Go To Form Plan
-    Fill Plan Form          ${plan}
-    Total Plan Should Be    ${plan.total}
+    Fill Plan Form              ${plan}
+    Total Plan Should Be        ${plan.total}
 
 
 Cenario: Cadastro de um novo plano
-  
+    [tags]      ui
     &{plan}     Create Dictionary       title=Robson Olinger      duration=06     price=20,00     total=R$ 120,00
     
-    remove_plan            ${plan.title}
+    remove_plan_by_title      ${plan.title}
 
     nav.Go To Plans
     plans.Go To Form Plan

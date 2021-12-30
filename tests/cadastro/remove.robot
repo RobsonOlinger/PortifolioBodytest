@@ -1,5 +1,5 @@
 ***Settings***
-Documentation       Suite do Cadastro de alunos
+Documentation       Suite do exclusão de alunos
 Resource            ${EXECDIR}/resources/resource.robot
 
 # Suite Setup         Tudo aqui acontece antes da  suite

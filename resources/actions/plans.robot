@@ -44,15 +44,12 @@ Go To Form Plan
 
 ## Validations
 Total Plan Should Be
-   [Arguments]                  ${number}
+   [Arguments]                  ${total}
     
 
-     ${element}                  Set Variable                   css=#pagination .total 
+    Get Attribute       ${TOTAL_FIELD}         value       ==      ${total}
 
-     Wait For Elements State     ${element}                      visible                 5
-     Get Text                    ${element}        ==            Total: ${number}      
      
-
 Seach Plan By Title
     [Arguments]         ${title}
 

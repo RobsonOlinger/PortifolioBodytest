@@ -18,3 +18,7 @@ Go To Page Students
 Go To Plans
     Click                           css=a[href="/planos"] 
     Wait For Elements State         css=h1 >> text=Gestão de Planos         visible     5
+
+Go To Matriculas
+    Click           css=a[href$="/matriculas"]
+    Wait For Elements State         css=h1 >> text=Gestão de Matrículas         visible     5

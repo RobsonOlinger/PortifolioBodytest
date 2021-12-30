@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211222 16:20:55.412" rpa="false" schemaversion="2">
-<suite id="s1" name="Update" source="C:\RobotExpert\bodytest\tests\planos\update.robot">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211228 18:21:31.847" rpa="false" schemaversion="2">
+<suite id="s1" name="Create" source="C:\RobotExpert\bodytest\tests\matriculas\create.robot">
 <kw name="Start Admin Session" library="resource" type="SETUP">
 <kw name="Start Browser Session" library="resource">
 <kw name="New Browser" library="Browser">
@@ -9,9 +9,9 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211222 16:20:56.970" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotExpert\\bodytest\\logs\\browser\\traces\\25f2219c-14c5-4bb4-b38b-5545324ffe52"}</msg>
-<msg timestamp="20211222 16:20:58.092" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotExpert\\bodytest\\logs\\browser\\traces\\25f2219c-14c5-4bb4-b38b-5545324ffe52"}</msg>
-<status status="PASS" starttime="20211222 16:20:56.969" endtime="20211222 16:20:58.092"/>
+<msg timestamp="20211228 18:21:33.479" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\RobotExpert\\bodytest\\logs\\browser\\traces\\06c26f8b-fc94-4754-ab49-ef197d57d826"}</msg>
+<msg timestamp="20211228 18:21:34.839" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\RobotExpert\\bodytest\\logs\\browser\\traces\\06c26f8b-fc94-4754-ab49-ef197d57d826"}</msg>
+<status status="PASS" starttime="20211228 18:21:33.478" endtime="20211228 18:21:34.839"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>about:blank</arg>
@@ -20,11 +20,11 @@
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20211222 16:20:58.581" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
-<msg timestamp="20211222 16:20:58.581" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20211222 16:20:58.092" endtime="20211222 16:20:58.581"/>
+<msg timestamp="20211228 18:21:35.450" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg timestamp="20211228 18:21:35.450" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211228 18:21:34.840" endtime="20211228 18:21:35.450"/>
 </kw>
-<status status="PASS" starttime="20211222 16:20:56.969" endtime="20211222 16:20:58.582"/>
+<status status="PASS" starttime="20211228 18:21:33.478" endtime="20211228 18:21:35.451"/>
 </kw>
 <kw name="Go To Login Page" library="auth">
 <kw name="Go To" library="Browser">
@@ -32,10 +32,10 @@ Returns a stable identifier for the created page.</doc>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<msg timestamp="20211222 16:21:02.321" level="INFO">Successfully opened URL https://bodytest-web-olinger.herokuapp.com/</msg>
-<status status="PASS" starttime="20211222 16:20:58.582" endtime="20211222 16:21:02.321"/>
+<msg timestamp="20211228 18:21:38.956" level="INFO">Successfully opened URL https://bodytest-web-olinger.herokuapp.com/</msg>
+<status status="PASS" starttime="20211228 18:21:35.451" endtime="20211228 18:21:38.956"/>
 </kw>
-<status status="PASS" starttime="20211222 16:20:58.582" endtime="20211222 16:21:02.322"/>
+<status status="PASS" starttime="20211228 18:21:35.451" endtime="20211228 18:21:38.957"/>
 </kw>
 <kw name="Login with" library="auth">
 <arg>admin@bodytest.com</arg>
@@ -46,8 +46,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211222 16:21:02.323" level="INFO">Fills the text 'admin@bodytest.com' in the given field.</msg>
-<status status="PASS" starttime="20211222 16:21:02.322" endtime="20211222 16:21:02.368"/>
+<msg timestamp="20211228 18:21:38.961" level="INFO">Fills the text 'admin@bodytest.com' in the given field.</msg>
+<status status="PASS" starttime="20211228 18:21:38.958" endtime="20211228 18:21:39.035"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[placeholder*=senha]</arg>
@@ -55,17 +55,17 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211222 16:21:02.369" level="INFO">Fills the text 'pwd123' in the given field.</msg>
-<status status="PASS" starttime="20211222 16:21:02.368" endtime="20211222 16:21:02.400"/>
+<msg timestamp="20211228 18:21:39.036" level="INFO">Fills the text 'pwd123' in the given field.</msg>
+<status status="PASS" starttime="20211228 18:21:39.036" endtime="20211228 18:21:39.064"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>text=Entrar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211222 16:21:02.400" endtime="20211222 16:21:02.487"/>
+<status status="PASS" starttime="20211228 18:21:39.064" endtime="20211228 18:21:39.156"/>
 </kw>
-<status status="PASS" starttime="20211222 16:21:02.322" endtime="20211222 16:21:02.487"/>
+<status status="PASS" starttime="20211228 18:21:38.957" endtime="20211228 18:21:39.156"/>
 </kw>
 <kw name="User Should Be Logged In" library="nav">
 <arg>Administrador</arg>
@@ -77,195 +77,462 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211222 16:21:02.488" endtime="20211222 16:21:03.851"/>
+<status status="PASS" starttime="20211228 18:21:39.157" endtime="20211228 18:21:40.524"/>
 </kw>
-<status status="PASS" starttime="20211222 16:21:02.488" endtime="20211222 16:21:03.851"/>
+<status status="PASS" starttime="20211228 18:21:39.156" endtime="20211228 18:21:40.524"/>
 </kw>
-<status status="PASS" starttime="20211222 16:20:56.969" endtime="20211222 16:21:03.851"/>
+<status status="PASS" starttime="20211228 18:21:33.477" endtime="20211228 18:21:40.525"/>
 </kw>
-<test id="s1-t1" name="cenario: Atualizar um plano ja cadastrado">
+<test id="s1-t1" name="Cenario: Deve exibir data inicial e final conforme o plano escolhido">
 <kw name="Get Json" library="resource">
-<var>${fixture}</var>
-<arg>plans-update.json</arg>
+<var>${fixtures}</var>
+<arg>matriculas-dates.json</arg>
 <kw name="Get File" library="OperatingSystem">
 <var>${file}</var>
 <arg>${EXECDIR}/resources/fixtures/${file_name}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<msg timestamp="20211222 16:21:03.857" level="INFO" html="true">Getting file '&lt;a href="file://C:\RobotExpert\bodytest\resources\fixtures\plans-update.json"&gt;C:\RobotExpert\bodytest\resources\fixtures\plans-update.json&lt;/a&gt;'.</msg>
-<msg timestamp="20211222 16:21:03.858" level="INFO">${file} = {
-    "before": {
-        "title": "Robson Olinger",
-        "duration": "05",
-        "price": 15.00
-    
+<msg timestamp="20211228 18:21:40.533" level="INFO" html="true">Getting file '&lt;a href="file://C:\RobotExpert\bodytest\resources\fixtures\matriculas-dates.json"&gt;C:\RobotExpert\bodytest\resources\fixtures\matriculas-dates.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211228 18:21:40.533" level="INFO">${file} = {
+
+    "students":{
+        "name": "Jhon Conner",
+             "email":"jhon@skynet.com",
+             "age": 16,
+             "weight": 65,
+             "feet_tall": 1.75
     },
-    "after": {
-        "title": "Brenda Souza",
-        "duration": "12",
-        "pri...</msg>
-<status status="PASS" starttime="20211222 16:21:03.857" endtime="20211222 16:21:03.858"/>
+    "plan":{
+       ...</msg>
+<status status="PASS" starttime="20211228 18:21:40.532" endtime="20211228 18:21:40.533"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${json_object}</var>
 <arg>json.loads($file)</arg>
 <arg>json</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211222 16:21:03.862" level="INFO">${json_object} = {'before': {'title': 'Robson Olinger', 'duration': '05', 'price': 15.0}, 'after': {'title': 'Brenda Souza', 'duration': '12', 'price': 100.0}}</msg>
-<status status="PASS" starttime="20211222 16:21:03.858" endtime="20211222 16:21:03.862"/>
+<msg timestamp="20211228 18:21:40.538" level="INFO">${json_object} = {'students': {'name': 'Jhon Conner', 'email': 'jhon@skynet.com', 'age': 16, 'weight': 65, 'feet_tall': 1.75}, 'plan': {'title': 'Plano Black', 'duration': 12, 'price': 19.99}}</msg>
+<status status="PASS" starttime="20211228 18:21:40.533" endtime="20211228 18:21:40.538"/>
 </kw>
-<msg timestamp="20211222 16:21:03.863" level="INFO">${fixture} = {'before': {'title': 'Robson Olinger', 'duration': '05', 'price': 15.0}, 'after': {'title': 'Brenda Souza', 'duration': '12', 'price': 100.0}}</msg>
-<status status="PASS" starttime="20211222 16:21:03.857" endtime="20211222 16:21:03.863"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${robson}</var>
-<arg>${fixture['before']}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211222 16:21:03.865" level="INFO">${robson} = {'title': 'Robson Olinger', 'duration': '05', 'price': 15.0}</msg>
-<status status="PASS" starttime="20211222 16:21:03.864" endtime="20211222 16:21:03.865"/>
+<msg timestamp="20211228 18:21:40.538" level="INFO">${fixtures} = {'students': {'name': 'Jhon Conner', 'email': 'jhon@skynet.com', 'age': 16, 'weight': 65, 'feet_tall': 1.75}, 'plan': {'title': 'Plano Black', 'duration': 12, 'price': 19.99}}</msg>
+<status status="PASS" starttime="20211228 18:21:40.532" endtime="20211228 18:21:40.538"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
-<var>${souza}</var>
-<arg>${fixture['after']}</arg>
+<var>${jhon}</var>
+<arg>${fixtures['students']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20211222 16:21:03.866" level="INFO">${souza} = {'title': 'Brenda Souza', 'duration': '12', 'price': 100.0}</msg>
-<status status="PASS" starttime="20211222 16:21:03.865" endtime="20211222 16:21:03.866"/>
+<msg timestamp="20211228 18:21:40.540" level="INFO">${jhon} = {'name': 'Jhon Conner', 'email': 'jhon@skynet.com', 'age': 16, 'weight': 65, 'feet_tall': 1.75}</msg>
+<status status="PASS" starttime="20211228 18:21:40.539" endtime="20211228 18:21:40.540"/>
 </kw>
-<kw name="Remove Plan By Title" library="DeloreanLibrary">
-<arg>${robson['title']}</arg>
-<msg timestamp="20211222 16:21:03.867" level="INFO">delete from plans where title LIKE '%Robson Olinger%'</msg>
-<status status="PASS" starttime="20211222 16:21:03.866" endtime="20211222 16:21:05.742"/>
+<kw name="Set Variable" library="BuiltIn">
+<var>${black}</var>
+<arg>${fixtures['plan']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211228 18:21:40.543" level="INFO">${black} = {'title': 'Plano Black', 'duration': 12, 'price': 19.99}</msg>
+<status status="PASS" starttime="20211228 18:21:40.542" endtime="20211228 18:21:40.543"/>
 </kw>
-<kw name="Remove Plan By Title" library="DeloreanLibrary">
-<arg>${souza['title']}</arg>
-<msg timestamp="20211222 16:21:05.744" level="INFO">delete from plans where title LIKE '%Brenda Souza%'</msg>
-<status status="PASS" starttime="20211222 16:21:05.743" endtime="20211222 16:21:07.353"/>
+<kw name="Insert Student" library="DeloreanLibrary">
+<arg>${jhon}</arg>
+<msg timestamp="20211228 18:21:40.544" level="INFO">delete from students where email = 'jhon@skynet.com'</msg>
+<msg timestamp="20211228 18:21:42.348" level="INFO">insert into students (name, email, age, weight, feet_tall, created_at, updated_at)values('Jhon Conner','jhon@skynet.com',16,65,1.75,NOW(),NOW());</msg>
+<status status="PASS" starttime="20211228 18:21:40.544" endtime="20211228 18:21:44.072"/>
 </kw>
 <kw name="Insert Plan" library="DeloreanLibrary">
-<arg>${robson}</arg>
-<msg timestamp="20211222 16:21:07.355" level="INFO">delete from plans where title LIKE '%Robson Olinger%'</msg>
-<msg timestamp="20211222 16:21:08.991" level="INFO">insert into plans (title, duration, price, created_at, updated_at)values ('Robson Olinger',05,15.0,NOW(), NOW());</msg>
-<status status="PASS" starttime="20211222 16:21:07.355" endtime="20211222 16:21:10.942"/>
+<arg>${black}</arg>
+<msg timestamp="20211228 18:21:44.074" level="INFO">delete from plans where title LIKE '%Plano Black%'</msg>
+<msg timestamp="20211228 18:21:45.765" level="INFO">insert into plans (title, duration, price, created_at, updated_at)values ('Plano Black',12,19.99,NOW(), NOW());</msg>
+<status status="PASS" starttime="20211228 18:21:44.073" endtime="20211228 18:21:47.534"/>
 </kw>
-<kw name="Go To Plans" library="nav">
+<kw name="Go To Matriculas" library="nav">
 <kw name="Click" library="Browser">
-<arg>css=a[href="/planos"]</arg>
+<arg>css=a[href$="/matriculas"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211222 16:21:10.943" endtime="20211222 16:21:11.028"/>
+<status status="PASS" starttime="20211228 18:21:47.535" endtime="20211228 18:21:47.656"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
-<arg>css=h1 &gt;&gt; text=Gestão de Planos</arg>
+<arg>css=h1 &gt;&gt; text=Gestão de Matrículas</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211222 16:21:11.039" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Gestão de Planos at state visible</msg>
-<status status="PASS" starttime="20211222 16:21:11.028" endtime="20211222 16:21:11.039"/>
+<msg timestamp="20211228 18:21:47.676" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Gestão de Matrículas at state visible</msg>
+<status status="PASS" starttime="20211228 18:21:47.656" endtime="20211228 18:21:47.677"/>
 </kw>
-<status status="PASS" starttime="20211222 16:21:10.943" endtime="20211222 16:21:11.039"/>
+<status status="PASS" starttime="20211228 18:21:47.535" endtime="20211228 18:21:47.677"/>
 </kw>
-<kw name="Seach Plan By Title" library="plans">
-<arg>${robson['title']}</arg>
+<kw name="Go To Form Matricula" library="matriculas">
+<kw name="Set Strict Mode" library="Browser">
+<arg>false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Controls library strict mode.</doc>
+<status status="PASS" starttime="20211228 18:21:47.678" endtime="20211228 18:21:47.678"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${BOTAO_CADASTRAR_MATRICULA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211228 18:21:47.678" endtime="20211228 18:21:47.803"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=h1 &gt;&gt; text=Nova matrícula</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211228 18:21:47.814" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Nova matrícula at state visible</msg>
+<status status="PASS" starttime="20211228 18:21:47.803" endtime="20211228 18:21:47.814"/>
+</kw>
+<status status="PASS" starttime="20211228 18:21:47.677" endtime="20211228 18:21:47.814"/>
+</kw>
+<kw name="Select Student" library="matriculas">
+<arg>${jhon['name']}</arg>
 <kw name="Fill Text" library="Browser">
-<arg>css=input[placeholder="Buscar plano"]</arg>
+<arg>css=input[aria-label=student_id]</arg>
+<arg>${name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211228 18:21:47.817" level="INFO">Fills the text 'Jhon Conner' in the given field.</msg>
+<status status="PASS" starttime="20211228 18:21:47.816" endtime="20211228 18:21:47.864"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211228 18:21:49.877" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211228 18:21:47.865" endtime="20211228 18:21:49.877"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=div[id*=option] &gt;&gt; text= ${name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211228 18:21:49.878" endtime="20211228 18:21:49.937"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211228 18:21:51.945" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211228 18:21:49.938" endtime="20211228 18:21:51.945"/>
+</kw>
+<status status="PASS" starttime="20211228 18:21:47.815" endtime="20211228 18:21:51.945"/>
+</kw>
+<kw name="Select Plan" library="matriculas">
+<arg>${black['title']}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[aria-label=plan_id]</arg>
 <arg>${title}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211222 16:21:11.040" level="INFO">Fills the text 'Robson Olinger' in the given field.</msg>
-<status status="PASS" starttime="20211222 16:21:11.040" endtime="20211222 16:21:11.061"/>
+<msg timestamp="20211228 18:21:51.949" level="INFO">Fills the text 'Plano Black' in the given field.</msg>
+<status status="PASS" starttime="20211228 18:21:51.948" endtime="20211228 18:21:52.004"/>
 </kw>
-<status status="PASS" starttime="20211222 16:21:11.039" endtime="20211222 16:21:11.061"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211228 18:21:54.020" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211228 18:21:52.004" endtime="20211228 18:21:54.021"/>
 </kw>
-<kw name="Go To Plan Update Form" library="plans">
-<arg>${robson['title']}</arg>
 <kw name="Click" library="Browser">
-<arg>xpath=//td[contains(text(),"${title}")]/..//a[@class='edit']</arg>
+<arg>css=div[id*=option] &gt;&gt; text=${title}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211222 16:21:11.063" endtime="20211222 16:21:11.545"/>
+<status status="PASS" starttime="20211228 18:21:54.021" endtime="20211228 18:21:54.087"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211228 18:21:56.092" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211228 18:21:54.088" endtime="20211228 18:21:56.092"/>
+</kw>
+<status status="PASS" starttime="20211228 18:21:51.946" endtime="20211228 18:21:56.093"/>
+</kw>
+<kw name="Start Date Should Today" library="matriculas">
+<kw name="Get Current Date" library="DateTime">
+<var>${start_date}</var>
+<arg>result_format=%d/%m/%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20211228 18:21:56.095" level="INFO">${start_date} = 28/12/2021</msg>
+<status status="PASS" starttime="20211228 18:21:56.094" endtime="20211228 18:21:56.095"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<arg>css=input[name=start_date]</arg>
+<arg>value</arg>
+<arg>equal</arg>
+<arg>${start_date}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211228 18:21:56.095" endtime="20211228 18:21:56.133"/>
+</kw>
+<status status="PASS" starttime="20211228 18:21:56.094" endtime="20211228 18:21:56.134"/>
+</kw>
+<kw name="End Date Should Today" library="matriculas">
+<arg>28/12/2022</arg>
+<kw name="Get Current Date" library="DateTime">
+<var>${end_date}</var>
+<arg>result_format=%d/%m/%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20211228 18:21:56.136" level="INFO">${end_date} = 28/12/2021</msg>
+<status status="PASS" starttime="20211228 18:21:56.135" endtime="20211228 18:21:56.136"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<arg>css=input[name=end_date]</arg>
+<arg>value</arg>
+<arg>equal</arg>
+<arg>${end_plan}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211228 18:21:56.136" endtime="20211228 18:21:56.164"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${end_plan}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211228 18:21:56.164" level="INFO">28/12/2022</msg>
+<status status="PASS" starttime="20211228 18:21:56.164" endtime="20211228 18:21:56.164"/>
+</kw>
+<status status="PASS" starttime="20211228 18:21:56.134" endtime="20211228 18:21:56.165"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211228 18:21:56.415" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211228 18:21:56.165" endtime="20211228 18:21:56.415"/>
+</kw>
+<status status="PASS" starttime="20211228 18:21:40.525" endtime="20211228 18:21:56.415"/>
+</test>
+<test id="s1-t2" name="Cenario: Deve matricular um aluno em um plano">
+<kw name="Get Json" library="resource">
+<var>${fixtures}</var>
+<arg>matriculas-create.json</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${file}</var>
+<arg>${EXECDIR}/resources/fixtures/${file_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20211228 18:21:56.436" level="INFO" html="true">Getting file '&lt;a href="file://C:\RobotExpert\bodytest\resources\fixtures\matriculas-create.json"&gt;C:\RobotExpert\bodytest\resources\fixtures\matriculas-create.json&lt;/a&gt;'.</msg>
+<msg timestamp="20211228 18:21:56.436" level="INFO">${file} = {
+
+    "students":{
+        "name": "Sara Conner",
+             "email":"sara@skynet.com",
+             "age": 25,
+             "weight": 60,
+             "feet_tall": 1.65
+    },
+    "plan":{
+       ...</msg>
+<status status="PASS" starttime="20211228 18:21:56.435" endtime="20211228 18:21:56.436"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${json_object}</var>
+<arg>json.loads($file)</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211228 18:21:56.437" level="INFO">${json_object} = {'students': {'name': 'Sara Conner', 'email': 'sara@skynet.com', 'age': 25, 'weight': 60, 'feet_tall': 1.65}, 'plan': {'title': 'Plano Fit', 'duration': 6, 'price': 26.99}}</msg>
+<status status="PASS" starttime="20211228 18:21:56.437" endtime="20211228 18:21:56.437"/>
+</kw>
+<msg timestamp="20211228 18:21:56.438" level="INFO">${fixtures} = {'students': {'name': 'Sara Conner', 'email': 'sara@skynet.com', 'age': 25, 'weight': 60, 'feet_tall': 1.65}, 'plan': {'title': 'Plano Fit', 'duration': 6, 'price': 26.99}}</msg>
+<status status="PASS" starttime="20211228 18:21:56.434" endtime="20211228 18:21:56.438"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${sara}</var>
+<arg>${fixtures['students']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211228 18:21:56.440" level="INFO">${sara} = {'name': 'Sara Conner', 'email': 'sara@skynet.com', 'age': 25, 'weight': 60, 'feet_tall': 1.65}</msg>
+<status status="PASS" starttime="20211228 18:21:56.439" endtime="20211228 18:21:56.440"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${fit}</var>
+<arg>${fixtures['plan']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211228 18:21:56.442" level="INFO">${fit} = {'title': 'Plano Fit', 'duration': 6, 'price': 26.99}</msg>
+<status status="PASS" starttime="20211228 18:21:56.441" endtime="20211228 18:21:56.442"/>
+</kw>
+<kw name="Insert Student" library="DeloreanLibrary">
+<arg>${sara}</arg>
+<msg timestamp="20211228 18:21:56.443" level="INFO">delete from students where email = 'sara@skynet.com'</msg>
+<msg timestamp="20211228 18:21:58.207" level="INFO">insert into students (name, email, age, weight, feet_tall, created_at, updated_at)values('Sara Conner','sara@skynet.com',25,60,1.65,NOW(),NOW());</msg>
+<status status="PASS" starttime="20211228 18:21:56.443" endtime="20211228 18:21:59.998"/>
+</kw>
+<kw name="Insert Plan" library="DeloreanLibrary">
+<arg>${fit}</arg>
+<msg timestamp="20211228 18:22:00.000" level="INFO">delete from plans where title LIKE '%Plano Fit%'</msg>
+<msg timestamp="20211228 18:22:01.693" level="INFO">insert into plans (title, duration, price, created_at, updated_at)values ('Plano Fit',6,26.99,NOW(), NOW());</msg>
+<status status="PASS" starttime="20211228 18:21:59.999" endtime="20211228 18:22:03.487"/>
+</kw>
+<kw name="Go To Matriculas" library="nav">
+<kw name="Click" library="Browser">
+<arg>css=a[href$="/matriculas"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211228 18:22:03.488" endtime="20211228 18:22:03.577"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
-<arg>css=h1 &gt;&gt; text=Edição de plano</arg>
+<arg>css=h1 &gt;&gt; text=Gestão de Matrículas</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211222 16:21:11.552" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Edição de plano at state visible</msg>
-<status status="PASS" starttime="20211222 16:21:11.545" endtime="20211222 16:21:11.552"/>
+<msg timestamp="20211228 18:22:03.588" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Gestão de Matrículas at state visible</msg>
+<status status="PASS" starttime="20211228 18:22:03.577" endtime="20211228 18:22:03.588"/>
 </kw>
-<status status="PASS" starttime="20211222 16:21:11.062" endtime="20211222 16:21:11.553"/>
+<status status="PASS" starttime="20211228 18:22:03.488" endtime="20211228 18:22:03.588"/>
 </kw>
-<kw name="Update Plan Form" library="plans">
-<arg>${souza}</arg>
-<kw name="Fill Text" library="Browser">
-<arg>${TITLE_FIELD}</arg>
-<arg>${plan['title']}</arg>
-<tag>PageContent</tag>
+<kw name="Go To Form Matricula" library="matriculas">
+<kw name="Set Strict Mode" library="Browser">
+<arg>false</arg>
+<tag>BrowserControl</tag>
 <tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211222 16:21:11.555" level="INFO">Fills the text 'Brenda Souza' in the given field.</msg>
-<status status="PASS" starttime="20211222 16:21:11.554" endtime="20211222 16:21:11.580"/>
+<doc>Controls library strict mode.</doc>
+<status status="PASS" starttime="20211228 18:22:03.589" endtime="20211228 18:22:03.589"/>
 </kw>
-<kw name="Fill Text" library="Browser">
-<arg>${DURATION_FIELD}</arg>
-<arg>${plan['duration']}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211222 16:21:11.581" level="INFO">Fills the text '12' in the given field.</msg>
-<status status="PASS" starttime="20211222 16:21:11.580" endtime="20211222 16:21:11.601"/>
-</kw>
-<kw name="Fill Text" library="Browser">
-<arg>${PRICE_FIELD}</arg>
-<arg>${plan['price']}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211222 16:21:11.602" level="INFO">Fills the text '100.0' in the given field.</msg>
-<status status="PASS" starttime="20211222 16:21:11.601" endtime="20211222 16:21:11.621"/>
-</kw>
-<kw name="Submit Plan Form" library="plans">
 <kw name="Click" library="Browser">
-<arg>${BOTAO_SALVAR_PLAN}</arg>
+<arg>${BOTAO_CADASTRAR_MATRICULA}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211222 16:21:11.621" endtime="20211222 16:21:11.695"/>
+<status status="PASS" starttime="20211228 18:22:03.590" endtime="20211228 18:22:03.664"/>
 </kw>
-<status status="PASS" starttime="20211222 16:21:11.621" endtime="20211222 16:21:11.695"/>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=h1 &gt;&gt; text=Nova matrícula</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211228 18:22:03.674" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Nova matrícula at state visible</msg>
+<status status="PASS" starttime="20211228 18:22:03.664" endtime="20211228 18:22:03.674"/>
 </kw>
-<status status="PASS" starttime="20211222 16:21:11.553" endtime="20211222 16:21:11.696"/>
+<status status="PASS" starttime="20211228 18:22:03.589" endtime="20211228 18:22:03.674"/>
+</kw>
+<kw name="Select Student" library="matriculas">
+<arg>${sara['name']}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[aria-label=student_id]</arg>
+<arg>${name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211228 18:22:03.677" level="INFO">Fills the text 'Sara Conner' in the given field.</msg>
+<status status="PASS" starttime="20211228 18:22:03.676" endtime="20211228 18:22:03.708"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>6</arg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211222 16:21:17.704" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20211222 16:21:11.696" endtime="20211222 16:21:17.704"/>
+<msg timestamp="20211228 18:22:05.720" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211228 18:22:03.708" endtime="20211228 18:22:05.720"/>
 </kw>
-<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<kw name="Click" library="Browser">
+<arg>css=div[id*=option] &gt;&gt; text= ${name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211228 18:22:05.720" endtime="20211228 18:22:05.780"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211228 18:22:07.783" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211228 18:22:05.780" endtime="20211228 18:22:07.784"/>
+</kw>
+<status status="PASS" starttime="20211228 18:22:03.675" endtime="20211228 18:22:07.784"/>
+</kw>
+<kw name="Select Plan" library="matriculas">
+<arg>${fit['title']}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[aria-label=plan_id]</arg>
+<arg>${title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211228 18:22:07.789" level="INFO">Fills the text 'Plano Fit' in the given field.</msg>
+<status status="PASS" starttime="20211228 18:22:07.788" endtime="20211228 18:22:07.845"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211228 18:22:09.861" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211228 18:22:07.845" endtime="20211228 18:22:09.861"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=div[id*=option] &gt;&gt; text=${title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211228 18:22:09.862" endtime="20211228 18:22:09.923"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211228 18:22:11.927" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211228 18:22:09.923" endtime="20211228 18:22:11.927"/>
+</kw>
+<status status="PASS" starttime="20211228 18:22:07.785" endtime="20211228 18:22:11.928"/>
+</kw>
+<kw name="Submit Enrolls Form" library="matriculas">
+<kw name="Click" library="Browser">
+<arg>css=button[form=formEnrollment]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211228 18:22:11.932" endtime="20211228 18:22:12.023"/>
+</kw>
+<status status="PASS" starttime="20211228 18:22:11.932" endtime="20211228 18:22:12.024"/>
+</kw>
+<kw name="Toast Text Should Be" library="components">
+<arg>Matrícula cadastrada com sucesso</arg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=.Toastify__toast-body &gt;&gt; text=${expect_text}</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211228 18:22:12.574" level="INFO">Waited for Element with selector css=.Toastify__toast-body &gt;&gt; text=Matrícula cadastrada com sucesso at state visible</msg>
+<status status="PASS" starttime="20211228 18:22:12.027" endtime="20211228 18:22:12.575"/>
+</kw>
+<status status="PASS" starttime="20211228 18:22:12.027" endtime="20211228 18:22:12.576"/>
+</kw>
+<kw name="Wating Screen Toast Alert and Take Screenshot" library="resource" type="TEARDOWN">
+<arg>2</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>${timeout}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211228 18:22:14.594" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211228 18:22:12.578" endtime="20211228 18:22:14.594"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211222 16:21:17.857" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211222 16:21:17.705" endtime="20211222 16:21:17.857"/>
+<msg timestamp="20211228 18:22:14.772" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211228 18:22:14.595" endtime="20211228 18:22:14.772"/>
 </kw>
-<status status="PASS" starttime="20211222 16:21:03.851" endtime="20211222 16:21:17.857"/>
+<status status="PASS" starttime="20211228 18:22:12.577" endtime="20211228 18:22:14.773"/>
+</kw>
+<status status="PASS" starttime="20211228 18:21:56.426" endtime="20211228 18:22:14.774"/>
 </test>
-<doc>Atualizar planos</doc>
-<status status="PASS" starttime="20211222 16:20:55.413" endtime="20211222 16:21:17.864"/>
+<doc>Gestão de Matriculas</doc>
+<status status="PASS" starttime="20211228 18:21:31.850" endtime="20211228 18:22:14.792"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Update">Update</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Create">Create</stat>
 </suite>
 </statistics>
 <errors>

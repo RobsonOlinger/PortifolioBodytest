@@ -1,0 +1,27 @@
+{
+
+    "students":{
+        "name": "Sara Conner",
+             "email":"sara@skynet.com",
+             "age": 25,
+             "weight": 60,
+             "feet_tall": 1.65
+    },
+    "plan":{
+        "title": "Plano Fit",
+        "duration": 6,
+        "price": 26.99
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

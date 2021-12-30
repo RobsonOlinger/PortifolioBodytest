@@ -17,7 +17,7 @@ Test Teardown       Take Screenshot
 
 ***Test Cases***
 Cenario: Busca exata
-    [tags]       bia
+    [tags]       ui
     &{plan}     Create Dictionary       title=Bia Nunes      duration=5     price=15,00    created_at=${EMPTY}      updated_at=${EMPTY} 
 
     remove_plan
@@ -31,12 +31,9 @@ Cenario: Busca exata
     plans.Seach Plan By Title             ${plan.title}
 
     
-    plans.Plans Should be visible         ${plan.title}
+    components.Total Items Should Be      1     
 
-    plans.Total Plan Should Be            1       
-
-
-
+  
 Cenario: Registro não encontrado
     
     ${name}             Set Variable            Barão Zeno

@@ -1,0 +1,7 @@
+robotframework
+robotframework-browser
+psycopg2
+
+
+##dependecnias##############
+#para ler as dependencias basta digitar no console emuladtor "pip install -r requirements.txt", depois instala as depedencias da browser "rfbrowser init"
